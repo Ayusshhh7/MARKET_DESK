@@ -1,0 +1,30 @@
+/* NSE Market Desk — polished interactive UI */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+:root { --md-bg:#f4f7fb; --md-panel:#ffffff; --md-text:#172033; --md-muted:#718096; --md-line:#e2e8f0; --md-green:#059669; --md-accent:#2563eb; }
+html, body, [class*="css"] { font-family:'DM Sans',sans-serif; }
+.stApp { background:var(--md-bg); color:var(--md-text); transition:background-color .2s ease,color .2s ease; }
+.block-container { max-width:1500px; padding-top:1.25rem; padding-bottom:2rem; }
+[data-testid="stHeader"] { background:transparent; }
+[data-testid="stSidebar"] { background:var(--md-panel); border-right:1px solid var(--md-line); }
+[data-testid="stMetric"] { background:var(--md-panel); border:1px solid var(--md-line); border-radius:16px; padding:16px 18px; box-shadow:0 4px 18px rgba(15,23,42,.035); transition:transform .18s ease,box-shadow .18s ease; }
+[data-testid="stMetric"]:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(15,23,42,.08); }
+[data-testid="stMetricLabel"] { color:var(--md-muted)!important; }
+[data-testid="stMetricValue"] { color:var(--md-text)!important; }
+[data-testid="stSidebar"] input,[data-testid="stSidebar"] textarea { background:var(--md-panel)!important; color:var(--md-text)!important; border-color:var(--md-line)!important; border-radius:10px!important; }
+[data-testid="stSidebar"] input::placeholder { color:var(--md-muted)!important; opacity:1!important; }
+[data-testid="stSidebar"] div[data-baseweb="select"] > div { background:var(--md-panel)!important; border-color:var(--md-line)!important; border-radius:10px!important; }
+[data-testid="stSidebar"] div[data-baseweb="select"] span,[data-testid="stSidebar"] div[data-baseweb="select"] input,[data-testid="stSidebar"] div[data-baseweb="select"] svg { color:var(--md-text)!important; fill:var(--md-text)!important; }
+.stButton > button,.stDownloadButton > button { border-radius:10px; border:1px solid var(--md-line); transition:transform .15s ease,box-shadow .15s ease; }
+.stButton > button:hover,.stDownloadButton > button:hover { transform:translateY(-1px); box-shadow:0 5px 14px rgba(37,99,235,.12); border-color:var(--md-accent); }
+div[data-testid="stTabs"] button[aria-selected="true"] { color:var(--md-green)!important; border-bottom-color:var(--md-green)!important; }
+div[data-testid="stTabs"] button { font-weight:600; }
+.md-app-header { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:18px 22px; margin:0 0 22px; border:1px solid var(--md-line); border-radius:18px; background:var(--md-panel); box-shadow:0 6px 22px rgba(15,23,42,.04); }
+.md-brand { display:flex; align-items:center; gap:13px; }
+.md-logo { display:flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:13px; background:linear-gradient(135deg,#d1fae5,#dbeafe); color:#047857; font-size:24px; }
+.md-app-name { color:var(--md-text); font-size:21px; font-weight:800; letter-spacing:-.45px; line-height:1.2; }
+.md-app-subtitle { color:var(--md-muted); font-size:12px; margin-top:5px; }
+.md-live-pill { display:inline-flex; align-items:center; gap:7px; white-space:nowrap; padding:7px 11px; border:1px solid #a7f3d0; border-radius:999px; background:#ecfdf5; color:#047857; font-size:11px; font-weight:700; }
+.md-live-dot { width:7px; height:7px; border-radius:50%; background:#10b981; box-shadow:0 0 0 4px rgba(16,185,129,.12); }
+.md-section-title { color:var(--md-text); font-size:12px; font-weight:800; letter-spacing:1.1px; text-transform:uppercase; margin:10px 0 12px; }
+[data-testid="stDataFrame"] { border:1px solid var(--md-line); border-radius:12px; overflow:hidden; }
+@media(max-width:700px) { .md-app-header{align-items:flex-start;padding:14px}.md-app-name{font-size:17px}.md-live-pill{font-size:10px} }
