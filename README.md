@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NSE Live Market Analyzer & Prediction Dashboard
 
 A fresh local Windows app for Indian NSE stocks. It provides live-ish quote refresh, technical analysis, candle charts, news headlines, and an experimental next-5-minute forecast.
@@ -44,3 +45,6 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ## Important
 Predictions are uncertain statistical estimates, not financial advice or buy/sell instructions. Model probability is not calibrated confidence. Evaluate with a walk-forward backtest before considering any trading use. Do not use this app as a sole basis for financial decisions.
+=======
+# MARKET_DESK
+>>>>>>> f7f2b8d68a1b0957e6be8ef45362b6089dc2c2df
