@@ -1,5 +1,9 @@
 # Market Desk — Live Stock Market Analyzer
 
+🚀 **Live Demo:** [Open Market Desk](https://marketdesk-imha3pd9vbkzstv3kkmoy3.streamlit.app/)
+
+---
+
 A local Windows dashboard for tracking stocks, analyzing price movements, viewing technical indicators, and experimenting with short-term price forecasts.
 
 ## Features
